@@ -39,6 +39,14 @@
       z-index: 100;
     }
     nav img { height: 52px; }
+    nav .nav-right { display: flex; align-items: center; gap: 1rem; }
+    nav a.login-link {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    nav a.login-link:hover { color: var(--teal-dk); }
     nav a.cta-btn {
       background: var(--teal);
       color: var(--white);
@@ -278,7 +286,10 @@
   <!-- NAV -->
   <nav>
     <img src="assets/logo.png" alt="Sevastay" />
-    <a href="#contact" class="cta-btn">Request Demo</a>
+    <div class="nav-right">
+      <a href="https://app.sevastay.com/login" class="login-link">Log In</a>
+      <a href="https://app.sevastay.com/signup" class="cta-btn">Get Started</a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -288,7 +299,7 @@
       <h1>Know your properties.<br /><span>Own your numbers.</span></h1>
       <p>Sevastay gives independent hotel owners a clear view of revenue, performance, and financials across all properties — in one dashboard, updated daily.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Request Demo</a>
+        <a href="https://app.sevastay.com/signup" class="btn-primary">Get Started</a>
         <a href="#features" class="btn-secondary">See Features</a>
       </div>
     </div>
@@ -401,7 +412,7 @@
           <li><span class="check">✓</span> Mobile app (iOS & Android)</li>
           <li><span class="check">✓</span> Email & chat support</li>
         </ul>
-        <a href="#contact" class="btn-primary" style="display:block;text-align:center">Get Started</a>
+        <a href="https://app.sevastay.com/signup" class="btn-primary" style="display:block;text-align:center">Get Started</a>
       </div>
     </div>
   </section>
